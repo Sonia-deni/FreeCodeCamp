@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Survey Form</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="form-area">
+<h1 id="title">Sonia's Survey Form</h1>
+<p id="description" class="intro"><strong>Welcome to my super fun survey</strong></p>
+
+<form id="survey-form">
+  <fieldset>
+    <div class="contact-details">
+  <label id="name-label" >Name <input type="text" id="name" placeholder="Say My Name" class="contact-details" required></label>
+  <label id="email-label" >Email <input type="email" id="email" placeholder="Sign up for alllll the spam!" class="contact-details" required></label>
+  <label id="number-label">Number <input type="number" id="number" placeholder="Pick a number, any number" min="7" max="11" pattern="[0-9]{7,11}" class="contact-details" ></label>
+  <label>This is a pointless dropdown, because I can...
+    <select id="dropdown">
+      <option>please select</option>
+      <option>yes</option>
+      <option>no</option>
+      <option>4</option>
+      <option>true</option>
+    </select></label>
+    </div>
+  </fieldset>
+  <fieldset>
+  <div class="writing">
+    <label>What do you like to write?</label>
+      <label><input type="radio" name="clicky" value="1" > HTML</label>
+      <label><input type="radio" name="clicky" value="2"> CSS</label>
+      <label><input type="radio" name="clicky" value="3"> JavaScript</label>
+      <label><input type="radio" name="clicky" value="4"> Words</label>
+    </div>
+    <div class="fishy-song">
+    <label>Checkboxes yay!!!</label>
+      <label><input type="checkbox" value="1" class="tick-box" checked/> 1</label>
+      <label><input type="checkbox" value="2" class="tick-box"/> 2</label>
+      <label><input type="checkbox" value="3" class="tick-box"/> 3</label>
+      <label><input type="checkbox" value="4" class="tick-box"/> 4</label>
+      <label><input type="checkbox" value="5" class="tick-box"/> 5</label>
+      <label><input type="checkbox" value="6" /> Once I caught a fish alive</label>
+    </div>
+    </fieldset>
+    <fieldset>
+      <div class="final-thoughts">
+    <label>Any additional comments? Did you love it? <textarea id="feedback" name="feedback" rows="3" cols="40" placeholder="I like big butts and I cannot lie"></textarea>
+    </fieldset>
+    <div class="submit-button">
+    <input type="submit" id="submit">
+    </div>
+    </div>
+</div>
+</form>
+</body>
+</html>
